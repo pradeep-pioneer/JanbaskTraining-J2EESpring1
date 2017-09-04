@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id = "basicSpringExample" class = "com.janbask.training3.BasicSpringSample">
+        <property name = "message" value = "Hello Spring World!"/>
+    </bean>
+
+    <bean id = "simpleConfiguration" class = "com.janbask.training3.SimpleConfiguration">
+        <property name = "downloadUrl" value = "https://raw.githubusercontent.com/pradeep-pioneer/Gratitude-Data/master/quotesprocessed.txt"/>
+        <property name = "fileNamePrefix" value = "quotesFile-%s.txt"/>
+    </bean>
+</beans>
